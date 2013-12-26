@@ -36,6 +36,9 @@ TARGET_KERNEL_SELINUX_CONFIG := m2selinux_defconfig
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
+# linaro 	
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-4.7-13.04/bin/arm-linux-gnueabihf-
+
 # Adreno configuration
 BOARD_EGL_CFG := device/samsung/d2-common/configs/egl.cfg
 
