@@ -33,11 +33,13 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01300000
 BOARD_KERNEL_PAGESIZE       := 2048
 TARGET_KERNEL_VARIANT_CONFIG := cyanogen_d2_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := m2selinux_defconfig
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-4.7-13.04/bin/arm-linux-gnueabihf-
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
-# linaro 	
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-4.7-13.04/bin/arm-linux-gnueabihf-
+# WiFi module
+WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/dhd.ko"
+WIFI_DRIVER_MODULE_NAME := "dhd"
 
 # Adreno configuration
 BOARD_EGL_CFG := device/samsung/d2-common/configs/egl.cfg
