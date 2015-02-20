@@ -44,7 +44,7 @@ FIRMWARE_MODEM_IMAGES += \
 
 FIRMWARE_MODEM_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(FIRMWARE_MODEM_IMAGES)))
 
-ifneq (d2bst, $(TARGET_DEVICE))
+ifneq (d2usc, $(TARGET_DEVICE))
 $(FIRMWARE_MODEM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Modem Firmware link: $@"
 	@mkdir -p $(dir $@)
